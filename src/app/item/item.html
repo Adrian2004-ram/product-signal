@@ -1,0 +1,41 @@
+<div class="content">
+  <div class="info">
+    <div class="title">
+      <h1>iPhone 15 Pro</h1>
+      <p class="subtitle">Space Black Titanium</p>
+    </div>
+    <div class="price">
+      <p>
+        Price: <span>$999</span>
+      </p>
+      <p>
+        Quantity: <span>{{ quantity() }}</span>
+      </p>
+    </div>
+    <div class="btn-cuantity">
+      <button class="minus" data-symbol="-" (click)="minus()"></button>
+      <div class="quantity">
+        <p>{{ quantity() }}</p>
+      </div>
+      <button class="plus" data-symbol="+" (click)="plus()"></button>
+    </div>
+    <hr />
+    <div class="total">
+      <p>
+        Total: <span>${{ total() }}</span>
+      </p>
+    </div>
+    <div class="colors-title">
+      <p>Color - Black></p>
+    </div>
+  </div>
+  <div class="product">
+    <img src="images/iphone.jpg" alt="Image" />
+    <div class="colors">
+      <button class="color p-black selected"></button>
+      <button class="color p-grey"></button>
+      <button class="color p-orange"></button>
+      <button class="color p-blue"></button>
+    </div>
+  </div>
+</div>
